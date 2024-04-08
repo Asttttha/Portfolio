@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navBar {
+  background-color: rgba(57, 55, 55, 0.363);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.navElements {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin: 0 40px;
+  padding: 20px;
+  gap: 4rem;
+}
+
+.navElements li a {
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 6rem;
+  height: 100vh;
+  color: white;
+}
+
+.hi {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.homeName {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  color: blue;
+}
+
+.homeDesc {
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  margin: 2rem 0;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 3.5s steps(80, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+}
+
+.avatarImg {
+  width: 25rem;
+  border-radius: 60% 40% 60% 40%;
+}
+
+.iconDiv {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.iconDiv a {
+  text-decoration: none;
+  color: white;
+}
+
+.aboutDiv {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 4rem;
+}
+
+.About1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 0 20px;
+  margin: 1rem 1rem 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.About2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 20px;
+  margin: 1rem 1rem 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.aboutParagraph {
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutParagraph::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(1, 17, 44, 0.427),
+    rgba(255, 255, 255, 0)
+  );
+  top: 0;
+  left: 0;
+  animation: waveAnimation 2s linear infinite;
+}
+
+.head {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.downloadResume {
+  border-radius: 20px;
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.downloadResume:hover {
+  color: white;
+  background: none;
+  border: 2px solid white;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.skillsDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 4rem;
+  color: white;
+}
+
+.techDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nonTech {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.technical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.technical img,
+.nonTech img {
+  height: 55px;
+  width: 55px;
+}
+
+h2,
+h3 {
+  color: white;
+}
+
+.skillImg {
+  padding: 10px;
+  border-radius: 3px 12px 4px 12px;
+  background-color: rgba(131, 126, 126, 0.468);
+}
+
+.nonTechnical {
+  padding: 2rem;
+}
+
+.nonTechnical ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.cardDiv {
+  display: flex;
+  height: 100vh;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 100%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBtn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+
+  background: black;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+}
+.contactDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(131, 126, 126, 0.468);
+  border-radius: 5px 55px 5px 55px;
+}
+
+.formDiv {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.field button {
+  border-radius: 20px;
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.field button:hover {
+  color: white;
+  background: none;
+  border: 2px solid white;
+}
+
+label {
+  font-size: 16px; /* Adjust this value according to your preference */
+  color: white;
+  letter-spacing: 2px;
+}
+
+.inputField {
+  width: 500px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 12px; /* Adjust this value according to your preference */
+}
+
+.footer {
+  height: 5vh;
+  background-color: rgba(57, 55, 55, 0.363);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(240, 248, 255, 0.541);
+}
+
+
+.menuToggle {
+  display: none; /* Hide toggle button by default */
+}
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    /* background: grey; */
+    width: 100%;
+    position: fixed;
+    padding: 5px 0;
+  }
+  .navElements {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    background-color: rgba(57, 55, 55, 0.594);
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+    height: 135vh;
+    margin: 0;
+  }
+
+  .navElements li{
+    background-color: rgba(131, 126, 126, 0.425);
+    width: 300px;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* Starting position below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Ending position at top */
+    }
+  }
+
+  .navElements.open {
+    display: flex; /* Show menu when open */
+    animation: fadeInUp 0.8s ease forwards; /* Apply fade-up animation */
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Start position */
+  }
+
+  .menuIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menuToggle {
+    display: block; /* Show toggle button on small screens */
+    border: none;
+    padding: 10px;
+    background: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 26px;
+    text-align: end;
+    z-index: 1000;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+  }
+
+  .hi {
+    font-size: 2rem;
+  }
+  .homeName {
+    font-size: 3rem;
+  }
+
+  .homeDesc {
+    margin: 1rem 0;
+  }
+
+  .avatarImg {
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .aboutDiv {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .About1 {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px;
+    margin: 0 1rem;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .About2 {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin: 0 1rem;
+  }
+
+  .skills {
+    height: 150vh;
+    margin: 2rem 1rem;
+  }
+  .skillsDiv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .techDiv {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .nonTech {
+    gap: 0rem;
+    width: 100%;
+  }
+
+  .technical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .nonTechnical {
+    padding: 0 0.5rem;
+  }
+
+  .cardDiv {
+    height: 120vh;
+    gap: 0.5rem;
+    margin: 3rem 0 0;
+  }
+  .cards {
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+
+  .contactForm {
+    height: 140vh;
+    gap: 1rem;
+  }
+
+  .inputField {
+    width: 290px;
+  }
+
+  .navElements {
+    display: none;
+  }
+}
