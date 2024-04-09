@@ -257,7 +257,7 @@ h3 {
   height: 100vh;
   gap: 4rem;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .cards {
@@ -280,7 +280,7 @@ h3 {
 .contactForm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   gap: 1rem;
@@ -501,9 +501,9 @@ label {
   }
 
   .cardDiv {
-    height: 120vh;
+    height: 170vh;
     gap: 0.5rem;
-    margin: 3rem 0 0;
+    /* margin: 3rem 0 0; */
   }
   .cards {
     margin: 1rem 0;
@@ -511,7 +511,8 @@ label {
   }
 
   .contactForm {
-    height: 140vh;
+    height: 100vh;
+    justify-content: center;
     gap: 1rem;
   }
 
