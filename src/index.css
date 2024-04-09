@@ -280,7 +280,7 @@ h3 {
 .contactForm {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   height: 100vh;
   gap: 1rem;
