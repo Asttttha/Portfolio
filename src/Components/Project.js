@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import proj1 from "../assets/proj1.png";
 import proj2 from "../assets/proj2.png";
+import proj3 from "../assets/proj3.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -46,20 +47,20 @@ function Project() {
                         <CardMedia
                             component="img"
                             height="140"
-                            image={proj1}
+                            image={proj3}
                             alt="ecom-shopping"
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Ecom-shopping-app
+                                NapFT website
                             </Typography>
                             <Typography variant="body3" color="text.secondary">
-                                My personal portfolio, built with React.js, pinch of Material-UI, EmailJS for form's message delivery, AOS for animations, CSS for styling, and React-Hot-Toast for notifications. Showcasing my skills, experiences, and projects, offering insights into my background. Explore for a comprehensive overview of my capabilities. An example of my work!</Typography>
+                                Napft's official website, constructed using ReactJS, has been developed entirely from scratch. I have primarily focused on building key components such as the navbar, homepage, footer, profile page, and mint form. Full responsiveness across various devices, this website remains an ongoing project, continually evolving to meet modern standards.</Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
                         <Button size="small" color="primary" className='cardBtn'>
-                            <a href='https://ecom-shopping-app.vercel.app/' target='_blank' rel="noreferrer"> visit </a>
+                            <a href='https://napft.com/' target='_blank' rel="noreferrer"> visit </a>
                         </Button>
                     </CardActions>
                 </Card>
@@ -82,7 +83,7 @@ function Project() {
                     </CardActionArea>
                     <CardActions>
                         <Button size="small" color="primary" className='cardBtn'>
-                            <a href='https://ecom-shopping-app.vercel.app/' target='_blank' rel="noreferrer"> visit </a>
+                            <a href='https://asthasamaddar.netlify.app/' target='_blank' rel="noreferrer"> visit </a>
                         </Button>
                     </CardActions>
                 </Card>

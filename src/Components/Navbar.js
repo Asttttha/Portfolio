@@ -34,7 +34,6 @@ function Navbar() {
             <li><a href="#contact" onClick={closeMenu}> Contact me</a></li>
           </ul>
         </div>
-        {/* Dropdown menu */}
 
       </nav>
     </div>
