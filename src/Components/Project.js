@@ -7,6 +7,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import proj1 from "../assets/proj1.png";
 import proj2 from "../assets/proj2.png";
 import proj3 from "../assets/proj3.png"
+import proj5 from "../assets/proj5.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -29,16 +30,17 @@ function Project() {
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Ecommerce app
+                                School website
                             </Typography>
                             <Typography variant="body3" color="text.secondary">
-                                This React.js e-commerce template, currently in development, boasts a dynamic navbar, captivating home page video background, and product showcase. With modern features like React Icons and Aos for animations, it promises a visually engaging user experience for online shoppers. Please note that this project is still ongoing.
+                                This is a Reactjs project, responsive design and has all necessary sections any school website would need. Accessibility was tested using the browser's inspect tool.
                             </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
+
                         <Button size="small" color="primary" className='cardBtn'>
-                            <a href='https://ecom-shopping-app.vercel.app/' target='_blank' rel="noreferrer"> visit </a>
+                            <a href='https://school-webapp-eight.vercel.app/' target='_blank' rel="noreferrer"> visit </a>
                         </Button>
                     </CardActions>
                 </Card>
@@ -54,8 +56,9 @@ function Project() {
                             <Typography gutterBottom variant="h5" component="div">
                                 NapFT website
                             </Typography>
-                            <Typography variant="body3" color="text.secondary">
-                                Napft's official website, constructed using ReactJS, has been developed entirely from scratch. I have primarily focused on building key components such as the navbar, homepage, footer, profile page, and mint form. Full responsiveness across various devices, this website remains an ongoing project, continually evolving to meet modern standards.</Typography>
+                            <Typography variant="body3" color="text.secondary" >
+                                Napft's official website, constructed using ReactJS, has been developed entirely from scratch. Through out my internship period I was assigned with this project.
+                            </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
@@ -64,29 +67,30 @@ function Project() {
                         </Button>
                     </CardActions>
                 </Card>
+
                 <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardMedia
                             component="img"
                             height="140"
-                            image={proj2}
+                            image={proj5}
                             alt="portfolio"
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Portfolio
+                                From figma design
                             </Typography>
                             <Typography variant="body3" color="text.secondary">
-                                My personal portfolio, built with React.js, pinch of Material-UI, EmailJS for form's message delivery, AOS for animations, CSS for styling, and React-Hot-Toast for notifications. Showcasing my skills, experiences, and projects, offering insights into my background. Explore for a comprehensive overview of my capabilities. An example of my work!
-                            </Typography>
+                                This React application showcases basic routing and form submission functionalities using React Router. It consists of a home page and a registration form page.</Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
                         <Button size="small" color="primary" className='cardBtn'>
-                            <a href='https://asthasamaddar.netlify.app/' target='_blank' rel="noreferrer"> visit </a>
+                            <a href='https://brrunel.netlify.app/' target='_blank' rel="noreferrer"> visit </a>
                         </Button>
                     </CardActions>
                 </Card>
+
             </div>
         </div>
 

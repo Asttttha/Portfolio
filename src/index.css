@@ -254,7 +254,7 @@ h3 {
 
 .cardDiv {
   display: flex;
-  height: 100vh;
+  height: auto;
   gap: 4rem;
   flex-direction: column;
   /* justify-content: center; */
@@ -265,6 +265,7 @@ h3 {
   gap: 3rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
