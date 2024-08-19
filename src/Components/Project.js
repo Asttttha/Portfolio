@@ -5,7 +5,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import proj1 from "../assets/proj1.png";
-import proj2 from "../assets/proj2.png";
 import proj3 from "../assets/proj3.png"
 import proj5 from "../assets/proj5.png"
 import Aos from "aos";
